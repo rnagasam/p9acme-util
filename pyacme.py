@@ -1,5 +1,9 @@
 import subprocess
 
+# TODO
+# Many more wrappers around `9p`
+# Abstract subprocess calls into a function to avoid repeating code like below
+
 def windownew():
 	"""Create a new ACME window and return
 	the window ID"""
@@ -20,6 +24,12 @@ def writectl(id, s):
 	
 def writedata(id, s):
 	"""Write to the data of a window"""
+	echos = subprocess.Popen(['echo', '-n', s], stdout=subprocess.PIPE)
+	p = subprocess.Popen(['9p', 'write', 'acme/'+str(id)+'/data'], stdin=echos.stdout)
+	return
+	
+def writename(id, s):
+	"""Set the name of a window"""
 	echos = subprocess.Popen(['echo', '-n', s], stdout=subprocess.PIPE)
 	p = subprocess.Popen(['9p', 'write', 'acme/'+str(id)+'/data'], stdin=echos.stdout)
 	return
@@ -49,3 +59,10 @@ def readdata(id):
 	"""Read from the data of a window"""
 	s = subprocess.check_output(['9p', 'read', 'acme/'+str(id)+'/addr'])
 	return s.decode('utf-8')
+
+def syncpos(id):
+	"""Set dot=addr"""
+	s = subprocess.Popen(['echo', '-n', 'dot=addr'], stdout=subprocess.PIPE)
+	p = suboprocess.Popen(['9p', 'write', 'acme/'+str(id)+'/body'])
+	return
+	

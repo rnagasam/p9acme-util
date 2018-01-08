@@ -20,13 +20,8 @@ an excellent introduction to Acme.
 import pyacme
 
 winid = pyacme.windownew() # creates a new window
-pyacme.writectl(winid, "clean") # mark window as 'clean'
-pyacme.writebody(winid, "This is an example\n") # write to the window's body
+pyacme.write("clean", winid, "ctl") # mark window as clean
+pyacme.write("PYACME", winid, "body') # write to the window's body
 
-pyacme.readbody(winid) # -> "This is an example\n"
+pyacme.read(winid, "body") # read from the window's body
 ```
-
-## TODO
-
-- Write to all 'files' in `/mnt/acme/`
-- Read from all 'files' in `/mnt/acme/`

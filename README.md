@@ -20,10 +20,10 @@ an excellent introduction to Acme.
 import pyacme
 
 winid = pyacme.windownew() # creates a new window
-writectl(winid, "clean") # mark window as 'clean'
-writebody(winid, "This is an example\n") # write to the window's body
+pyacme.writectl(winid, "clean") # mark window as 'clean'
+pyacme.writebody(winid, "This is an example\n") # write to the window's body
 
-readbody(winid) # -> "This is an example\n"
+pyacme.readbody(winid) # -> "This is an example\n"
 ```
 
 ## TODO

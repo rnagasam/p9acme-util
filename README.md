@@ -8,11 +8,6 @@ an excellent introduction to Acme.
 
 ## Usage
 
-`windownew` creates a new window
-
-`writeX` writes to the `X` file of a window using `9p write acme/winid/X`
-
-`readX` reads from the `X` file of a window using `9p read acme/winid/X`
 
 ```
 #!/usr/bin/python

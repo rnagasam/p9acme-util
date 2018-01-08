@@ -1,0 +1,14 @@
+#!/usr/bin/python3.5
+
+# Comment SML input
+
+import sys
+
+data = sys.stdin.readlines()
+
+for idx, line in enumerate(data):
+	if idx == 0:
+		print("(* " + line, end='')
+	else:
+		print(" * " + line, end='')
+print(" *)")

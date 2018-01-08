@@ -1,0 +1,26 @@
+#!/bin/bash
+
+export tabstop=2
+export TERM=dumb
+export PAGER=nobs
+export visibleclicks=1
+
+export BROWSER=firefox
+
+# from http://jlouisramblings.blogspot.ru/2013/04/acme-as-editor_20.html
+# Plumb files instead of starting new editor
+EDITOR=E
+unset FCEDIT VISUAL
+
+acme_bin_dir=$( cd $(dirname $0) && pwd )
+
+if [ "$(pgrep plumber)" ]; then
+	echo plumber is running
+else
+	echo starting plumber
+	9 plumber
+	cat /home/rmn/lib/plumbing | 9p write plumb/rules
+fi
+
+acme -a -F /usr/local/plan9/font/pelm/unicode.8.font $1 &
+# acme -a -f /mnt/font/'Go Mono'/11a/font &

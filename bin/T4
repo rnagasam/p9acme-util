@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# t4 :: tabs -> 4 spaces
+echo -n "1,$" | 9p write acme/$winid/addr
+9p read acme/$winid/body | expand -t 4 | 9p write acme/$winid/data

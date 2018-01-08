@@ -3,7 +3,7 @@
 A python wrapper around plan9port's `9p` command. Makes it easy to write
 python scripts that interact with Acme.
 
-Russ Cox's [video](https://www.youtube.com/results?search_query=a+tour+of+acme) is
+Russ Cox's [video](https://www.youtube.com/watch?v=dP1xVpMPn8M) is
 an excellent introduction to Acme.
 
 ## Usage

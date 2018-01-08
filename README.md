@@ -23,7 +23,7 @@ excellent introduction to Acme.
 
 `i-` : de-indent region by 1 Tab
 
-Usually, these scripts (with the exclusion of `a`) are placed in the tag prepended
+Usually, these scripts (with the exception of `a` and `T4`) are placed in the tag prepended
 with the `|` character. 
 
 

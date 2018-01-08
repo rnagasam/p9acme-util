@@ -8,6 +8,12 @@ an excellent introduction to Acme.
 
 ## Usage
 
+`windownew` creates a new window
+
+`writeX` writes to the `X` file of a window using `9p write acme/winid/X`
+
+`readX` reads from the `X` file of a window using `9p read acme/winid/X`
+
 ```
 #!/usr/bin/python
 
@@ -16,6 +22,8 @@ import pyacme
 winid = pyacme.windownew() # creates a new window
 writectl(winid, "clean") # mark window as 'clean'
 writebody(winid, "This is an example\n") # write to the window's body
+
+readbody(winid) # -> "This is an example\n"
 ```
 
 ## TODO

@@ -17,7 +17,7 @@ excellent introduction to Acme.
 
 `sc-` : uncomment region commented using `sc+`
 
-`T4` : convert tabs to 4 spaces -- useful when working with Python
+`T4` : convert tabs to 4 spaces -- useful when working with Python. Works on entire contents in window.
 
 `i+` : indent region by 1 Tab
 

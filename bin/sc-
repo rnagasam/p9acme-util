@@ -11,25 +11,25 @@ import sys
 data = sys.stdin.readlines()
 
 for line in data:
-	# (* ... *)
-	if line.startswith("(* ") and line.strip().endswith("*)"):
-		line = line.replace("(* ","").replace("*)","")
-		sys.stdout.write(line)
-	#  * ... *)
-	elif line.startswith(" * ") and line.strip().endswith("*)"):
-		line = line.replace(" * ","").replace("*)","")
-		sys.stdout.write(line)
-	elif line.startswith("(* "):
-		line = line.replace("(* ", "")
-		sys.stdout.write(line)
-	# * ...
-	elif line.startswith(" * "):
-		line = line.replace(" * ", "")
-		sys.stdout.write(line)
-	# ... *)
-	elif line.strip().endswith("*)"):
-		line = line.replace(" *)", "")
-		sys.stdout.write(line)
-	# ...
-	else:
-		sys.stdout.write(line)
+    # (* ... *)
+    if line.startswith("(* ") and line.strip().endswith("*)"):
+        line = line.replace("(* ","").replace("*)","")
+        sys.stdout.write(line)
+    #  * ... *)
+    elif line.startswith(" * ") and line.strip().endswith("*)"):
+        line = line.replace(" * ","").replace("*)","")
+        sys.stdout.write(line)
+    elif line.startswith("(* "):
+        line = line.replace("(* ", "")
+        sys.stdout.write(line)
+    # * ...
+    elif line.startswith(" * "):
+        line = line.replace(" * ", "")
+        sys.stdout.write(line)
+    # ... *)
+    elif line.strip().endswith("*)"):
+        line = line.replace(" *)", "")
+        sys.stdout.write(line)
+    # ...
+    else:
+        sys.stdout.write(line)

@@ -7,8 +7,8 @@ import sys
 data = sys.stdin.readlines()
 
 for idx, line in enumerate(data):
-	if idx == 0:
-		print("(* " + line, end='')
-	else:
-		print(" * " + line, end='')
+    if idx == 0:
+        print("(* " + line, end='')
+    else:
+        print(" * " + line, end='')
 print(" *)")

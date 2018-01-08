@@ -6,6 +6,8 @@ editor.
 Russ Cox's [video](https://www.youtube.com/watch?v=dP1xVpMPn8M) is an
 excellent introduction to Acme.
 
+![Screenshot](https://github.com/bluerama/p9acme-util/blob/master/screenshot.png)
+
 
 ## bin
 

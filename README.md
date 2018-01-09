@@ -24,7 +24,7 @@ For more information, visit the cat-v [page](http://acme.cat-v.org)
 
 `i-` : de-indent region by 1 Tab
 
-`Epy` : pipe input to `python`. Ability to 'fold' result. See demonstration below (excuse the slow gif)
+`Epy` : pipe input to `python`. Ability to 'fold' result. See demonstration below
 
 ![EpyDemo](https://github.com/bluerama/p9acme-util/blob/master/EpyDemo.gif)
 

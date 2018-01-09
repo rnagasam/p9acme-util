@@ -1,0 +1,21 @@
+#!/usr/bin/python
+
+import sys
+import subprocess
+
+def run(p):
+    """Run program p by piping to `python` and print results"""
+    ech = subprocess.Popen(['echo', p], stdout=subprocess.PIPE)
+    spc = '\n' if p[-1] == '\n' else '\n\n'
+    sys.stdout.write(p+spc+": ")
+    res = subprocess.Popen(['python'], stdin=ech.stdout)
+    return
+
+prog = sys.stdin.readlines()
+
+if prog[-1].startswith(':'): # fold result
+    sys.stdout.write(''.join(prog[:-2]))
+else:
+    run(''.join(prog))
+    
+

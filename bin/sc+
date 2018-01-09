@@ -1,4 +1,4 @@
-#!/usr/bin/python3.5
+#!/usr/bin/python
 
 # Comment SML input
 
@@ -8,7 +8,7 @@ data = sys.stdin.readlines()
 
 for idx, line in enumerate(data):
     if idx == 0:
-        print("(* " + line, end='')
+        sys.stdout.write("(* " + line)
     else:
-        print(" * " + line, end='')
-print(" *)")
+        sys.stdout.write(" * " + line)
+sys.stdout.write(" *)")

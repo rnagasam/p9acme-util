@@ -8,7 +8,7 @@ excellent introduction to Acme.
 
 For more information, visit the cat-v [page](http://acme.cat-v.org)
 
-![Acme](http://acme.cat-v.org/_imgs/obsd_acme.png)
+![Screenshot](https://github.com/bluerama/p9acme-util/blob/master/screenshot.png)
 
 ## bin
 

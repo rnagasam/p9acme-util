@@ -6,9 +6,6 @@ editor.
 Russ Cox's [video](https://www.youtube.com/watch?v=dP1xVpMPn8M) is an
 excellent introduction to Acme.
 
-![Screenshot](https://github.com/bluerama/p9acme-util/blob/master/screenshot.png)
-
-
 ## bin
 
 `a` : used for starting acme
@@ -22,6 +19,10 @@ excellent introduction to Acme.
 `i+` : indent region by 1 Tab
 
 `i-` : de-indent region by 1 Tab
+
+`Epy` : pipe input to `python`.
+
+![EpyDemo](https://github.com/bluerama/p9acme-util/blob/master/EpyDemo.gif)
 
 Usually, these scripts (with the exception of `a` and `T4`) are placed in the tag prepended
 with the `|` character. 

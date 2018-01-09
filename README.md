@@ -6,6 +6,10 @@ editor.
 Russ Cox's [video](https://www.youtube.com/watch?v=dP1xVpMPn8M) is an
 excellent introduction to Acme.
 
+For more information, visit the cat-v [page](http://acme.cat-v.org)
+
+![Acme](http://acme.cat-v.org/_imgs/obsd_acme.png)
+
 ## bin
 
 `a` : used for starting acme
@@ -20,7 +24,7 @@ excellent introduction to Acme.
 
 `i-` : de-indent region by 1 Tab
 
-`Epy` : pipe input to `python`.
+`Epy` : pipe input to `python`. Ability to 'fold' result. See demonstration below (excuse the slow gif)
 
 ![EpyDemo](https://github.com/bluerama/p9acme-util/blob/master/EpyDemo.gif)
 
